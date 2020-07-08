@@ -1,4 +1,4 @@
-.element {
-    width: 1000px;
-    background-image: url("../images/background.png");
+.background {
+    width: 200px;
+    background-image: url("../images/background.jpg");
 }
