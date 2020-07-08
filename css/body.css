@@ -11,4 +11,9 @@ html {
     max-width: 600px;
     margin: 0 auto;
     display: block;
+    background-image: url("../images/background.jpg");
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 }
