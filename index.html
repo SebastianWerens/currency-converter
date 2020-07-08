@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Przelicznik walut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="images/share.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/element.css">
+    <link rel="icon" href="images/icon192.png">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="body">
+
+    <header class="header">
+        <h1 class="header__title">Przelicznik walut</h1>
+    </header>
+    <section>
+        <form class="js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Uzupełnij dane</legend>
+                <label>
+                    <span class="form__labelText">
+                        Wpisz kwotę w zł:
+                    </span>
+                    <input class="form__field js-amount" placeholder="wpisz kwotę" type="number" required step="0.01"
+                        min="0.01">
+                </label>
+                <label>
+                    <span class="form__labelText">Wybierz walute:</span>
+                    <select class="form__field js-currency">
+                        <option value="USD">usd</option>
+                        <option value="EUR">eur</option>
+                        <option value="GBP">gbp</option>
+                        <option value="CHF">chf</option>
+                    </select>
+                </label>
+                <p><button class="form__button">Przelicz</button></p>
+                <p class="form__result js-result"></p>
+            </fieldset>
+        </form>
+    </section>
+
+
+</body>
+
+</html>
